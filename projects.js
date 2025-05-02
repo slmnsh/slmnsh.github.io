@@ -19,7 +19,7 @@ function fixCase(x) {
 request.onload = () => {
     var resp = request.response;
     resp.forEach((repo) => {
-        if (repo.owner.login === "slmn-sh") {
+        if (repo.owner.login === "slmnsh") {
             var rendered = Mustache.render(template, {
                 name: fixCase(repo.name),
                 desc: repo.description,
